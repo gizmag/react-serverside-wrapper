@@ -1,0 +1,28 @@
+{
+  "name": "react-serverside-wrapper",
+  "version": "1.0.0",
+  "description": "For server-side react rendering. Passes properties set on the server to the client and binds your React component javascript to the dom",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://georgespyropoulos@github.com/gizmag/react-serverside-wrapper.git"
+  },
+  "keywords": [
+    "React",
+    "serverside",
+    "rendering"
+  ],
+  "author": "George Spyropoulos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gizmag/react-serverside-wrapper/issues"
+  },
+  "homepage": "https://github.com/gizmag/react-serverside-wrapper#readme",
+  "dependencies": {
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
+  }
+}
