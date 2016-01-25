@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+const React = require('react');
+const ReactDOM = require('react-dom');
 
 class ServersideWrapper extends React.Component {
 
@@ -10,12 +10,10 @@ class ServersideWrapper extends React.Component {
     render() {
         const json = JSON.stringify(this.props.properties);
 
-        return (
-            <script type="application/json"
-                id={this.props.element + '_props'}
-                dangerouslySetInnerHTML={{ __html: json }}
-            ></script>
-        );
+        return React.createElement('script', { type: 'application/json',
+            id: this.props.element + '_props',
+            dangerouslySetInnerHTML: { __html: json }
+        });
     }
 }
 
@@ -35,4 +33,4 @@ ServersideWrapper.createDomElement = function(opts) {
     }
 };
 
-export default ServersideWrapper;
+module.exports = ServersideWrapper;
