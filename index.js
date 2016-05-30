@@ -13,7 +13,7 @@ var ServersideWrapper = React.createClass({
 
         return React.createElement('script', { type: 'application/json',
             id: this.props.element + '_props',
-            dangerouslySetInnerHTML: { __html: json }
+            dangerouslySetInnerHTML: { __html: json.replace(/\//g, '\\/') }
         });
     }
 });
